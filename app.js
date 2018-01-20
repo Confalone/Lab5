@@ -50,13 +50,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+// Write your code here a = 2 b = 3  c = 4
 function sumAndMultiply(a, b, c) {
-  //eslint-disable-line
+  var aAndB = sum (a,b)[0];
+  console.log('a and b:'+ aAndB);
+  var product = multiply(a,b)[0];
+
+  var sum3 = sum (aAndB, c);
+  console.log('a and B AND C:'+ sum3);
+  var times3 = multiply (product, c);
+
+  var totalSum = sum3[0];
+  var totalP = times3[0];
+
+  var msg = ( a +  ' and ' + b + ' and ' + c + ' sum to ' + totalSum + '.');
+  var pMsg = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + totalP + '.');
+  return [totalSum, totalP, msg, pMsg];
+
+  
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
