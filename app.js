@@ -13,7 +13,6 @@ function sum(a, b) {
   var msg = ('The sum of ' + a +  ' and ' + b + ' is ' + mySum + '.');
   return [mySum, msg];
 }
-sum (4,7);
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
