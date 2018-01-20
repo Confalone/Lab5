@@ -72,7 +72,6 @@ function sumAndMultiply(a, b, c) {
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
  testSumAndMultiply(4,7,5);
-
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -90,11 +89,23 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) {
   //eslint-disable-line
+  var tot = 0;
+  for (var i = 0; i < testArray.length; i++) {
+    tot = sum (tot, testArray[i])[0];
+  } 
+
+  //var aBc = sum(testArray[i],[0];
+  //console.log (aBc);
+  //var sum4 = sum (aBc,testArray)[0];
+
+  var msg = (testArray + ' was passed in as an array of numbers, and ' + tot + ' is their sum.');
+  console.log(tot, msg);
+  return [tot, msg];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
